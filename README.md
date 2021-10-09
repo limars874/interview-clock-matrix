@@ -12,6 +12,7 @@ output = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
 # test
 npm run test
 
+```
  PASS  tests/index.test.ts
   traverseClock test
     √ test  ==> empty array (2 ms)
@@ -26,3 +27,4 @@ Tests:       6 passed, 6 total
 Snapshots:   0 total
 Time:        2.127 s, estimated 3 s
 Ran all test suites.
+```
