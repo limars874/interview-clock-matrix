@@ -2,7 +2,7 @@ export function traverseClock(input: number[][]) {
   let outIndex = 0,
     innerIndex = 0;
   const outlen = input.length;
-  const innerLen = input[0] && input[0] ? input[0].length : 0;
+  const innerLen = input[0]?.length;
   if (!innerLen) {
     return [];
   }
@@ -11,7 +11,7 @@ export function traverseClock(input: number[][]) {
     upEdge = 0,
     downEdge = outlen - 1;
   let direction: 'left' | 'right' | 'down' | 'up' = 'right';
-  const ret = [];
+  const ret: number[] = [];
 
   while (true) {
     if (leftEdge > rightEdge || upEdge > downEdge) {
